@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/contact_create_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="返回"/>
+
+        <Button
+            android:id="@+id/contact_create_save"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/contact_create_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:hint="联系人"/>
+
+    <EditText
+        android:id="@+id/contact_create_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:hint="电话"/>
+     <Button
+         android:id="@+id/contact_create_add_all"
+         android:text="批量添加"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+    <Button
+        android:text="批量删除"
+        android:id="@+id/contact_crate_delete_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

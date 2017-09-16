@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.emery.contact.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="联系人"
+            android:textSize="30sp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="add"
+            android:text="添加"/>
+    </RelativeLayout>
+
+    <com.example.emery.contact.view.SwipeRefreshLayout
+        android:id="@+id/srl_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </com.example.emery.contact.view.SwipeRefreshLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_call"
+            style="@style/main_rb"
+            android:layout_weight="1"
+            android:text="拨号"/>
+
+        <RadioButton
+            android:id="@+id/rb_backup"
+            style="@style/main_rb"
+            android:layout_weight="1"
+            android:text="备份数据"/>
+
+        <RadioButton
+            android:id="@+id/start_receiver"
+            style="@style/main_rb"
+            android:layout_weight="1"
+            android:text="拨号监听"/>
+
+        <RadioButton
+            android:id="@+id/rb_post"
+            style="@style/main_rb"
+            android:layout_weight="1"
+            android:text="网络提交"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>
